@@ -1,0 +1,7 @@
+Run SQL scripts in the order of the following to guarantee referential integrity:
+Product,
+Review,
+Customer, 
+Address, 
+Orders, 
+LineItem

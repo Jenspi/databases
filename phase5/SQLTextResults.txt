@@ -1,0 +1,77 @@
+
+Products > $100:              
+------------------------------
+Taylor Swift Ticket
+Lizzo Ticket
+
+
+Customers not referr
+--------------------
+Will Smith
+Margot Robbie
+Dwayne Johnson
+Tom Hanks
+Gal Gadot
+Will Ferrell
+Jamie Foxx
+Rami Malek
+Adam Driver
+Salma Hayek
+
+10 rows selected. 
+
+
+Average Rating:
+---------------
+           4.25
+
+
+P_I P_NAME                            P_PRICE
+--- ------------------------------ ----------
+P01 Taylor Swift Ticket                199.99
+P07 Lizzo Ticket                       150.99
+P12 Jazz Fest Ticket                       95
+P20 Saints Ticket                       89.45
+P06 Harry Styles Ticket                 65.99
+P15 Audubon Zoo Ticket                  29.99
+P14 Streetcar Ticket                     2.25
+P17 Jazz at the Sandbar Ticket              0
+
+8 rows selected. 
+
+
+MAX(C_DAT MIN(C_DAT
+--------- ---------
+14-APR-92 20-DEC-60
+
+
+Reviews with 'great'                                                                                                                                                                                                                                      
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+It's a great book for college level database courses.
+Great book. Refined and improved.
+The mix is great. Have bought it many times either online or straight from Cafe' Du Monde. Love the cafe.
+This is the best Louisiana style hot sauce ever great price large bottles don't even think about it so good
+
+
+Reviews for P05 3<x<5
+---------------------
+                    3
+
+
+Highest Priced:               
+------------------------------
+Taylor Swift Ticket
+
+
+Priced greater than average:  
+------------------------------
+Taylor Swift Ticket
+Database Textbook
+Harry Styles Ticket
+Lizzo Ticket
+Alvin Kamara Jersey
+Jazz Fest Ticket
+Saints Ticket
+
+7 rows selected. 
+

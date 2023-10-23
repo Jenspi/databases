@@ -1,0 +1,55 @@
+
+Products with more than 30 sol
+------------------------------
+Taylor Swift Ticket
+Database Textbook
+Beignet Mix
+Pralines
+Crystal Hot Sauce
+Harry Styles Ticket
+Lizzo Ticket
+Tony Chachere's
+Coffee
+Alvin Kamara Jersey
+1 lb of Crawfish
+
+Products with more than 30 sol
+------------------------------
+Jazz Fest Ticket
+1 lb of Boudin
+Streetcar Ticket
+Audubon Zoo Ticket
+1 Dozen Oysters
+Jazz at the Sandbar Ticket
+Snoball
+Frozen Coffee
+Saints Ticket
+
+20 rows selected. 
+
+
+Names of customers: 
+--------------------
+Ewan McGregor
+
+
+Pro Average review rating
+--- ---------------------
+P02                  4.75
+P03                     5
+P05                   3.4
+
+no rows selected
+
+Number of orders placed:
+------------------------
+                       9
+
+
+Begins/ends with a v
+--------------------
+Idris Elba
+
+
+Commit complete.
+

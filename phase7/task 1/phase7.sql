@@ -10,12 +10,13 @@ SELECT C_Name "Names of customers:"
 FROM Customer
 WHERE C_ReferrerID IN (SELECT C_ID FROM Customer WHERE C_ReferrerID = 'C15');--done
 
--- 3. Find the customer names that have ordered the least expensive product 
---SELECT P_ID FROM Product WHERE P_Price = (SELECT MIN(P_Price) FROM Product);--get the ID of the lowest priced product
---SELECT L_OrderNumber from lineitem where L_ProductID = ( SELECT P_ID FROM Product WHERE P_Price = (SELECT MIN(P_Price) FROM Product) );--get order numbers of P17
---SELECT O_custID from orders where O_OrderNumber = (SELECT L_OrderNumber from lineitem where L_ProductID = ( SELECT P_ID FROM Product WHERE P_Price = (SELECT MIN(P_Price) FROM Product) ));--get IDS of people who ordered that order number
-
--- was meant to combine these but its getting too complicated and im already getting errors
+-- 3. Find the customer names that have ordered the least expensive product
+SELECT C_Name "Customers who ordered the least expensive product"
+FROM Product, Customer, LineItem, Orders
+WHERE C_OrderNumber = L_OrderNumber
+AND L_ProductID = P_ID
+AND C_ID = O_CustID
+AND Price = (SELECT MIN(Price) FROM Product);
 
 -- 4. Find the avg review rating for each product that has received a review (do no include
 -- products that have not received a review).

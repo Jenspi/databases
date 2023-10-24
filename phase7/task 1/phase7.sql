@@ -1,5 +1,5 @@
 -- 1. Retrieve the names of all products which have sold a total quantity greater than 30.
-SELECT distinct P_Name "Products with more than 30 sold:"---done
+SELECT DISTINCT P_Name "Products with more than 30 sold:"---done
 FROM Product, LineItem
 WHERE L_Quantity > 30;
 
@@ -22,20 +22,17 @@ AND Price = (SELECT MIN(Price) FROM Product);
 -- products that have not received a review).
 SELECT R_ProductID "Product", AVG(R_Rating) "Average review rating"---done
 FROM Review
-where r_rating is not null
+WHERE R_Rating IS NOT NULL
 GROUP BY R_ProductID;
 
 -- 5. List the total cost for each order (quantity * price for all products for each order ID) where
 -- the order cost is greater than 1000. Note: shipping cost was also a derived attribute - we will
 -- discuss how to build a function that can add that into the cost when we get to PL/SQL in Ch 5.
---SELECT O_OrderNumber, SUM(L_Quantity*P_Price)
---FROM Orders, LineItem, Product
---ON O_OrderNumer = L_OrderNumber
---ON L_ProductID = P_ID
---GROUP BY O_OrderNumber
---HAVING SUM(L_Quantity *P_Price) > 1000;
-
---doesn't work, can't figure out why
+SELECT L_OrderNumber, P_Name, SUM(L_Quantity*P_Price)
+FROM LineItme, Product
+WHERE L_ProductID = P_ID
+GROUP BY L_OrderNumber
+HAVING SUM(L_Quantity*P_Price) > 1000;
 
 -- 6. List customers that have spent more than $1000 on orders
 SELECT C_Name "Customers who have sent over $1000"

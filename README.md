@@ -90,6 +90,7 @@ https://freesql.com/
 <b> 📌 How to run the files: </b><br>
 <p align="center"><img src="./README_images/step-1.png" height=50% width=50%><img src="./README_images/success.png" height=50% width=50%></p><br>
 
+[**‼️ Files located in in ECommerceDB/**](./ECommerceDB/)<br>
 Drag `setup.sql` into the SQL Worksheet window and press run. If it was successful, you will see the tables appear in the Navigator pane and results in the Query Results! ☺️🎉
 
 Drag each `.sql` file (in the order below) into the SQL Worksheet window and press the Run button. Check the Query Results tab for output.

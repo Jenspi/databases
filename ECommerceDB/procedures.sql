@@ -2,6 +2,10 @@
 -- Jenny Spicer | December 12, 2025
 -- PL/SQL Procedures
 
+-- Add Inventory column to Product table
+--ALTER TABLE Product ADD Inventory NUMBER DEFAULT 64;
+--commit;
+
 -- LineItem data is inserted in triggers.sql (trigger fires on INSERT)
 CREATE OR REPLACE PROCEDURE Invoice (custID Customer.C_ID%type, orderDate date)
 AS

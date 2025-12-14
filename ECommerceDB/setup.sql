@@ -14,7 +14,7 @@ CREATE TABLE Product(
     P_ID CHAR(3),
     P_Name VARCHAR(30),
     P_Price NUMBER(5,2),
-    Inventory NUMBER DEFAULT 64,
+    --Inventory NUMBER DEFAULT 64,
     
     CONSTRAINT ProductPK PRIMARY KEY (P_ID)
 );
@@ -71,10 +71,6 @@ CREATE TABLE LineItem(
     CONSTRAINT LineItemFK2 FOREIGN KEY (L_ProductID) REFERENCES Product(P_ID)
 );
 
-commit;
-
--- Add Inventory column to Product table
-ALTER TABLE Product ADD Inventory NUMBER DEFAULT 64;
 commit;
 
 -- =====================
@@ -217,6 +213,10 @@ INSERT INTO orders VALUES('O0047','03-Feb-23','C08');
 INSERT INTO orders VALUES('O0048','03-Feb-23','C06');
 INSERT INTO orders VALUES('O0049','03-Feb-23','C04');
 INSERT INTO orders VALUES('O0050','03-Feb-23','C02');
+commit;
+
+-- Add Inventory column to Product table
+ALTER TABLE Product ADD Inventory NUMBER DEFAULT 64;
 commit;
 
 -- SELECT COUNT(*) "Product Count: should be 20" FROM Product;

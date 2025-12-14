@@ -1,3 +1,5 @@
+<p align="center"><img src="./README_images/title.gif" height=90% width=90%></p>
+
 # 🛍️ E-Commerce Database Management System 1.0
 Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, and modularize code for easy reuse & testing. .    ༘˚⋆🛍️ ｡⋆ 🛒 ⋆ 𖦹.✧˚
 
@@ -39,7 +41,7 @@ Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, a
       - [🚨 Phase 8 Part 1– PL/SQL Triggers](#-phase-8-part-1-plsql-triggers)
       - [🧪 Phase 8 Part 2– PL/SQL Procedures](#-phase-8-part-2-plsql-procedures)
     - [🔌 Phase 9: Java Database Connectivity (JDBC) with Prepared Statements](#-phase-9-java-database-connectivity-jdbc-with-prepared-statements)
-    - [� Phase 10: Normalization](#-phase-10-normalization)
+    - [🧼 Phase 10: Normalization](#-phase-10-normalization)
       - [📐 Phase 10 Part 1– Product Relation](#-phase-10-part-1-product-relation)
       - [👥 Phase 10 Part 2– Customer Relation](#-phase-10-part-2-customer-relation)
       - [🗺️ Phase 10 Part– Updated Project Schema](#️-phase-10-part-updated-project-schema)
@@ -50,6 +52,8 @@ This 16-week long project for <i><b>Data Models and Database Management Systems<
 
 
 ## 🎯 Project Features
+<p align="center"><img src="./README_images/ECommerceDB_features.png" height=100% width=100%></p>
+
 <b> 📑 Data Processing & Automation </b>
 - <b>Scalable</b> to millions of records
 - <b>Build data import/export</b> workflows

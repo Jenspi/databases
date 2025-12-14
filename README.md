@@ -1,4 +1,4 @@
-# E-Commerce Database System
+# 🛍️ E-Commerce Database Management System 1.0
 Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, and modularize code for easy reuse & testing. .    ༘˚⋆🛍️ ｡⋆ 🛒 ⋆ 𖦹.✧˚
 
 <!--Project version, tech stack-->
@@ -9,7 +9,7 @@ Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, a
 </p>
 
 ## 📋 Table of Contents
-- [E-Commerce Database System](#e-commerce-database-system)
+- [🛍️ E-Commerce Database Management System 1.0](#️-e-commerce-database-management-system-10)
   - [📋 Table of Contents](#-table-of-contents)
   - [📘 Project Summary](#-project-summary)
   - [🎯 Project Features](#-project-features)
@@ -17,32 +17,32 @@ Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, a
   - [🚀 Run This Project (No Installation Required)](#-run-this-project-no-installation-required)
   - [🧪 Expected Output](#-expected-output)
   - [❣️ A Detailed Breakdown of the 10 Phases](#️-a-detailed-breakdown-of-the-10-phases)
-    - [Phase 1: Automatic Data Type Detection (Java Program)](#phase-1-automatic-data-type-detection-java-program)
-    - [Phase 2: Entity-Relationship (ER) Modeling](#phase-2-entity-relationship-er-modeling)
-    - [Phase 3: Entity-Relationship (ER) Mapping \& Generating SQL Insert Statements](#phase-3-entity-relationship-er-mapping--generating-sql-insert-statements)
-      - [Phase 3 Part 1– ER Mapping for online retail store](#phase-3-part-1-er-mapping-for-online-retail-store)
-      - [Phase 3 Part 2– Generating SQL Insert Statements](#phase-3-part-2-generating-sql-insert-statements)
-      - [Why is automating the generation of SQL insert statements important?](#why-is-automating-the-generation-of-sql-insert-statements-important)
-    - [Phase 4: SQL DDL \&](#phase-4-sql-ddl-)
-      - [Phase 4 Part 1– SQL DDL](#phase-4-part-1-sql-ddl)
-      - [Phase 4 Part 2– Populating the Database](#phase-4-part-2-populating-the-database)
-    - [Phase 5: ✨Introductory✨ SQL Retrieval Queries \& Query Processing](#phase-5-introductory-sql-retrieval-queries--query-processing)
-      - [Phase 5 Part 1– SQL Retrieval Queries](#phase-5-part-1-sql-retrieval-queries)
-      - [Phase 5 Part 2– Query Processing](#phase-5-part-2-query-processing)
-    - [Phase 6: ✨Intermediate✨ Retrieval Queries \& Understanding Query Processing](#phase-6-intermediate-retrieval-queries--understanding-query-processing)
-      - [Phase 6 Part 1– Intermediate Retrieval Queries](#phase-6-part-1-intermediate-retrieval-queries)
-      - [Phase 6 Part 2– Understanding Query Processing](#phase-6-part-2-understanding-query-processing)
-    - [Phase 7: Intermediate Retrieval Queries + Transactions \& Serialization](#phase-7-intermediate-retrieval-queries--transactions--serialization)
-      - [Phase 7 Part 1– Intermediate Retrieval Queries](#phase-7-part-1-intermediate-retrieval-queries)
-      - [Phase 7 Part 2– Transactions \& Serialization](#phase-7-part-2-transactions--serialization)
-    - [Phase 8: PL/SQL Triggers \& PL/SQL Procedures](#phase-8-plsql-triggers--plsql-procedures)
-      - [Phase 8 Part 1– PL/SQL Triggers](#phase-8-part-1-plsql-triggers)
-      - [Phase 8 Part 2– PL/SQL Procedures](#phase-8-part-2-plsql-procedures)
-    - [Phase 9: Java Database Connectivity (JDBC) with Prepared Statements](#phase-9-java-database-connectivity-jdbc-with-prepared-statements)
-    - [Phase 10: Normalization](#phase-10-normalization)
-      - [Phase 10 Part 1– Product Relation](#phase-10-part-1-product-relation)
-      - [Phase 10 Part 2– Customer Relation](#phase-10-part-2-customer-relation)
-      - [Phase 10 Part– Updated Project Schema](#phase-10-part-updated-project-schema)
+    - [🔍 Phase 1: Automatic Data Type Detection (Java Program)](#-phase-1-automatic-data-type-detection-java-program)
+    - [🗂️ Phase 2: Entity-Relationship (ER) Modeling](#️-phase-2-entity-relationship-er-modeling)
+    - [🧬 Phase 3: Entity-Relationship (ER) Mapping \& Generating SQL Insert Statements](#-phase-3-entity-relationship-er-mapping--generating-sql-insert-statements)
+      - [🧱 Phase 3 Part 1– ER Mapping for online retail store](#-phase-3-part-1-er-mapping-for-online-retail-store)
+      - [🖨️ Phase 3 Part 2– Generating SQL Insert Statements](#️-phase-3-part-2-generating-sql-insert-statements)
+      - [❓ Why is automating the generation of SQL insert statements important?](#-why-is-automating-the-generation-of-sql-insert-statements-important)
+    - [🏗️ Phase 4: SQL DDL \& Populating the Database](#️-phase-4-sql-ddl--populating-the-database)
+      - [🛠️ Phase 4 Part 1– SQL DDL](#️-phase-4-part-1-sql-ddl)
+      - [📥 Phase 4 Part 2– Populating the Database](#-phase-4-part-2-populating-the-database)
+    - [🌱 Phase 5: ✨Introductory✨ SQL Retrieval Queries \& Query Processing](#-phase-5-introductory-sql-retrieval-queries--query-processing)
+      - [📤 Phase 5 Part 1– SQL Retrieval Queries](#-phase-5-part-1-sql-retrieval-queries)
+      - [🔄 Phase 5 Part 2– Query Processing](#-phase-5-part-2-query-processing)
+    - [📈 Phase 6: ✨Intermediate✨ Retrieval Queries \& Understanding Query Processing](#-phase-6-intermediate-retrieval-queries--understanding-query-processing)
+      - [🧮 Phase 6 Part 1– Intermediate Retrieval Queries](#-phase-6-part-1-intermediate-retrieval-queries)
+      - [🧵 Phase 6 Part 2– Understanding Query Processing](#-phase-6-part-2-understanding-query-processing)
+    - [🔐 Phase 7: Intermediate Retrieval Queries + Transactions \& Serialization](#-phase-7-intermediate-retrieval-queries--transactions--serialization)
+      - [📊 Phase 7 Part 1– Intermediate Retrieval Queries](#-phase-7-part-1-intermediate-retrieval-queries)
+      - [🔁 Phase 7 Part 2– Transactions \& Serialization](#-phase-7-part-2-transactions--serialization)
+    - [⚙️ Phase 8: PL/SQL Triggers \& PL/SQL Procedures](#️-phase-8-plsql-triggers--plsql-procedures)
+      - [🚨 Phase 8 Part 1– PL/SQL Triggers](#-phase-8-part-1-plsql-triggers)
+      - [🧪 Phase 8 Part 2– PL/SQL Procedures](#-phase-8-part-2-plsql-procedures)
+    - [🔌 Phase 9: Java Database Connectivity (JDBC) with Prepared Statements](#-phase-9-java-database-connectivity-jdbc-with-prepared-statements)
+    - [� Phase 10: Normalization](#-phase-10-normalization)
+      - [📐 Phase 10 Part 1– Product Relation](#-phase-10-part-1-product-relation)
+      - [👥 Phase 10 Part 2– Customer Relation](#-phase-10-part-2-customer-relation)
+      - [🗺️ Phase 10 Part– Updated Project Schema](#️-phase-10-part-updated-project-schema)
 
 
 ## 📘 Project Summary
@@ -96,6 +96,7 @@ Drag `setup.sql` into the SQL Worksheet window and press run. If it was successf
 Drag each `.sql` file (in the order below) into the SQL Worksheet window and press the Run button. Check the Query Results tab for output.
 1. **setup.sql** — Creates tables + populates all data except LineItem + adds Inventory column
 2. **triggers.sql** — Creates inventory management system trigger + inserts LineItem data (trigger fires here)
+   - will intentionally throw custom user errors when a product has no stock/not enough stock left
 3. **procedures.sql** — Defines Invoice procedure + runs test calls
 4. **queries.sql** — Optional test queries
    
@@ -115,7 +116,7 @@ When running `schema.sql`, you should see output similar to the following in the
 
 ## ❣️ A Detailed Breakdown of the 10 Phases
 
-### Phase 1: Automatic Data Type Detection (Java Program)
+### 🔍 Phase 1: Automatic Data Type Detection (Java Program)
 <a id="phase-1"></a>
 <p align="center"><img src="./phase1/input.png" width=50% height=50% align="center"></p><p align="center"><i>Phase 1 Input: .txt or .csv file of data</i></p>
 <p align="center"><img src="./phase1/output.png" width=50% height=50% align="center"></p><p align="center"><i>Phase 1 Output: .csv of data types (built upon in <a href=#phase-3 >Phase 3</a>)</i></p>
@@ -124,7 +125,7 @@ When running `schema.sql`, you should see output similar to the following in the
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 2: Entity-Relationship (ER) Modeling
+### 🗂️ Phase 2: Entity-Relationship (ER) Modeling
 <a id="phase-2"></a>
 <p align="center"><img src="./phase2/E-R Model.png" width=70% height=70%></p><p align="right"><i>My Entity-Relationship Model for the request quoted below.<br>Entities (in squares), attributes (in ovals) and keys (underlined), and the relationships (in triangles) (including cardinality and participation) among the online retail store.</i></p>
 
@@ -140,34 +141,34 @@ When running `schema.sql`, you should see output similar to the following in the
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 3: Entity-Relationship (ER) Mapping & Generating SQL Insert Statements
+### 🧬 Phase 3: Entity-Relationship (ER) Mapping & Generating SQL Insert Statements
 <a id="phase-3"></a>
 
-#### Phase 3 Part 1– ER Mapping for online retail store
+#### 🧱 Phase 3 Part 1– ER Mapping for online retail store
 <p align="center"><img src="./phase3/er-map.png" width=50% height=50% align="center"></p><p align="center"><i>Developing a complete logical schema (ER Map) based on <a href=#phase-2 >Phase 2's ER Model</a>.</i></p>
 
-#### Phase 3 Part 2– Generating SQL Insert Statements
+#### 🖨️ Phase 3 Part 2– Generating SQL Insert Statements
 <p align="center"><img src="./phase3/input.png" width=50% height=50% align="center"></p><p align="center"><i>Phase 3 Input: .txt file of data</i></p>
 <p align="center"><img src="./phase3/output.png" width=50% height=50% align="center"></p><p align="center"><i>Phase 3 Output: .csv of SQL insert statements (built on <a href=#phase-1 >Phase 1</a>)</i></p>
 
 <b>Phase 3</b> builds on the previous Phase 1, which was a Java program that determines data types of values in a file. Phase 3 takes our data from a text file and automatically generates SQL insert statements for the data.
 
-#### Why is automating the generation of SQL insert statements important?
+#### ❓ Why is automating the generation of SQL insert statements important?
 - <b>Less Copy/Pasting SQL</b>– automates SQL insert statements for you to copy/paste into a `.sql` file.
 - <b>Scalability</b>– works with thousands or millions of records to populate.
 - <b>Even Your Grandma Could Do It</b>– a non-CS end-user can pass in data without needing to write any SQL.
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 4: SQL DDL & 
+### 🏗️ Phase 4: SQL DDL & Populating the Database
 <a id="phase-4"></a>
 
-#### Phase 4 Part 1– SQL DDL
+#### 🛠️ Phase 4 Part 1– SQL DDL
 <p align="center"><img src="./phase4/Part 1- SQL DDL/store-ddl.png" width=50% height=50% align="center"></p><p align="center"><i>SQL DDL script to define my tables Customer, Address, Product, Review, Orders, and LineItem.</i></p>
 
 Phase 4 builds on our previous phase. Here, we are defining a DDL to run in SQL Developer. Then, we can move on to Part 2 to populate our database, also in SQL Developer.
 
-#### Phase 4 Part 2– Populating the Database
+#### 📥 Phase 4 Part 2– Populating the Database
 <p align="center"><img src="./phase4/Part 2- Populating/input.png" width=100% height=100% align="center"></p><p align="center"><i>Phase 4 Input: six .txt files of data.</i></p>
 
 <p align="center"><img src="./phase4/Part 2- Populating/output-1-3.png" width=100% height=100% align="center"><br><img src="./phase4/Part 2- Populating/output-4-6.png" width=100% height=100% align="center"></p><p align="center"><i>Phase 4 Output: six SQL scripts containing INSERT statements, using Phase 3's Java program.</i></p>
@@ -186,16 +187,16 @@ Here, we populate our 6 brand new tables by putting our input into our Phase 3 J
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 5: ✨Introductory✨ SQL Retrieval Queries & Query Processing
+### 🌱 Phase 5: ✨Introductory✨ SQL Retrieval Queries & Query Processing
 <a id="phase-5"></a>
 
-#### Phase 5 Part 1– SQL Retrieval Queries
+#### 📤 Phase 5 Part 1– SQL Retrieval Queries
 <p align="center"><img src="./phase5/input.png" height=50% width=50%><br><i>Introductory SQL Retrieval Query <b>Input</b></i></p>
 <p align="center"><img src="./phase5/sql-query-code.png" height=100% width=50%><br><i>Introductory SQL Retrieval Query Code</i></p>
 <p align="center"><img src="./phase5/sql-query-results.png" height=50% width=50%><br><i>Introductory SQL Retrieval Query Results</i></p>
 Phase 5 is based on Introductory SQL: <b>SQL Retrieval Queries</b>. A bunch of practice problems!
 
-#### Phase 5 Part 2– Query Processing
+#### 🔄 Phase 5 Part 2– Query Processing
 <p align="center"><img src="./phase5/input.png" height=50% width=50%><br><i>Introductory SQL Retrieval Query <b>Input</b></i></p>
 <p align="center"><img src="./phase5/query-8-java-code.png" height=100% width=50%><br><i>Flat File Model (Java Program) of SQL Retrieval Query</i></p>
 <p align="center"><img src="./phase5/Query-8_SQL-Output.png" height=50% width=50%><br><i>SQL Retrieval Query Result For Java Program to Replicate</i></p>
@@ -207,10 +208,10 @@ One of benefits of SQL is the <b>program-data independence</b> supported by the 
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 6: ✨Intermediate✨ Retrieval Queries & Understanding Query Processing
+### 📈 Phase 6: ✨Intermediate✨ Retrieval Queries & Understanding Query Processing
 <a id="phase-6"></a>
 
-#### Phase 6 Part 1– Intermediate Retrieval Queries
+#### 🧮 Phase 6 Part 1– Intermediate Retrieval Queries
 <p align="center"><img src="./phase6/sql-retrieval-queries.png" height=50% width=50%><br><i>Intermediate SQL Retrieval Query Code</i></p>
 <p align="center"><img src="./phase6/sql-results-1.png" height=50% width=50%><img src="./phase6/sql-results-2.png" height=50% width=50%><br><i>Intermediate SQL Retrieval Query Code Results</i></p>
 
@@ -220,7 +221,7 @@ Phase 6 is based on Inter SQL: <b>Intermediate Retrieval Queries</b>. Wrote quer
 3. Find the <b>names</b> of <b>all products</b> that do <b>not have any reviews</b>
 4. Find the <b>names of all customers</b> who were <b>referred by 'Margot Robbie'</b>. <i>Note: You must use the string ‘Margot Robbie’ and not hardcode the ID.</i>
 
-#### Phase 6 Part 2– Understanding Query Processing
+#### 🧵 Phase 6 Part 2– Understanding Query Processing
 <p align="center"><img src="./phase6/java-query-1.png" height=50% width=50%><img src="./phase6/java-query-2.png" height=50% width=50%><br><i>Flat File Model (Java Program) of SQL Retrieval Queries #1 & #2</i></p>
 <p align="center"><img src="./phase6/sql-queries-1-and-2.png" height=50% width=50%><br><i>SQL Retrieval Query Result For Java Program to Replicate</i></p>
 <p align="center"><img src="./phase6/flat-file-output.png" height=50% width=50%><br><i>Flat File Model Result</i></p>
@@ -232,10 +233,10 @@ One of benefits of SQL is the <b>program-data independence</b> supported by the 
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 7: Intermediate Retrieval Queries + Transactions & Serialization 
+### 🔐 Phase 7: Intermediate Retrieval Queries + Transactions & Serialization 
 <a id="phase-7"></a>
 
-#### Phase 7 Part 1– Intermediate Retrieval Queries
+#### 📊 Phase 7 Part 1– Intermediate Retrieval Queries
 <p align="center"><img src="./phase7/sql-queries-1-4.png" height=50% width=50%><img src="./phase7/sql-queries-5-8.png" height=50% width=50%><br><i><b>More</b> Intermediate SQL Retrieval Query Code</i></p>
 <p align="center"><img src="./phase7/sql-query-output.png" height=50% width=50%><br><i>Intermediate SQL Retrieval Query Code Results</i></p>
 
@@ -249,7 +250,7 @@ More Inter SQL: <b>Intermediate Retrieval Queries</b>. Wrote queries (without ha
 7. Find the total number of orders placed by customers who were referred by Margot Robbie; use the regular expression function REGEXP_LIKE.
 8. Find all customer names where both the first name and last name begin with a vowel
 
-#### Phase 7 Part 2– Transactions & Serialization
+#### 🔁 Phase 7 Part 2– Transactions & Serialization
 <p align="center"><img src="./phase7/S1.png" height=50% width=50%><img src="./phase7/S2.png" height=50% width=50%><br><i>Precedence graphs for S1 and S2</i></p>
 
 Consider the three transactions T1, T2, and T3, and the schedules S1 and S2 given below. Draw the serializability (precedence) graphs for S1 and S2, and state whether each schedule is serializable or not. If a schedule is serializable, write down the equivalent serial schedule(s).
@@ -264,15 +265,15 @@ S2: R1(X), R2(Z), R3(X), R1(Z), R2(Y), R3(Y), W1(X), W2(Z), W3(Y), W2(Y)
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 8: PL/SQL Triggers & PL/SQL Procedures
+### ⚙️ Phase 8: PL/SQL Triggers & PL/SQL Procedures
 <a id="phase-8"></a>
 
-#### Phase 8 Part 1– PL/SQL Triggers
+#### 🚨 Phase 8 Part 1– PL/SQL Triggers
 <p align="center"><img src="./phase8/inventory-maintenance-trigger.png" height=100% width=100%><br><i>SQL trigger that will maintain the inventory for products.</i></p>
 
 Wrote a trigger that will fire when we INSERT a row into the Lineitem table. This trigger will check the value of Inventory for the corresponding ProductID. 
 
-#### Phase 8 Part 2– PL/SQL Procedures
+#### 🧪 Phase 8 Part 2– PL/SQL Procedures
 <p align="center"><img src="./phase8/procedure-example.png" height=30% width=30%><br><i>Example invoice return</i></p>
 <p align="center"><img src="./phase8/procedure-part-1.png" height=50% width=50%><img src="./phase8/procedure-part-2.png" height=50% width=50%><br><i>PL/SQL procedure that generates an invoice for a given customer ID and order date</i></p>
 
@@ -280,7 +281,7 @@ Wrote a PL/SQL procedure that generates an invoice for a <b>given customer ID an
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 9: Java Database Connectivity (JDBC) with Prepared Statements
+### 🔌 Phase 9: Java Database Connectivity (JDBC) with Prepared Statements
 <a id="phase-9"></a>
 
 <p align="center"><img src="./phase9/java-invoice-generation-1.png" height=70% width=70%><br><img src="./phase9/java-invoice-generation-2.png" height=70% width=70%><br><i>Java application that generates an invoice for a given customer ID and order date.</i></p>
@@ -290,17 +291,17 @@ Wrote a Java application that generates an invoice for a given customer ID and o
 <p align="right"><i><a href="#readme-toc">(back to table of contents)</i></a></p>
 
 
-### Phase 10: Normalization
+### 🧼 Phase 10: Normalization
 <a id="phase-10"></a>
 
-#### Phase 10 Part 1– Product Relation
+#### 📐 Phase 10 Part 1– Product Relation
 <p align="center"><img src="./phase10/task-1-info.png" height=50% width=50%><br><i>Part 1 Info: New PRODUCT Relation</i></p>
 <p align="center"><img src="./phase10/2NF.png" height=70% width=70%><br><i>Removed any partial key dependencies to create PRODUCT Relation in <b>Second Normal Form</b></i></p>
 <p align="center"><img src="./phase10/3NF.png" height=70% width=70%><br><i>Removed any transitive dependencies to create PRODUCT Relation in <b>Third Normal Form</b></i></p>
 
 Since we've originally designed the web store database, fields have been added to the original PRODUCT relation. We start to notice some data inconsistencies (due to update anomalies caused by data redundancy). Our job is to evaluate and fix these problems.
 
-#### Phase 10 Part 2– Customer Relation
+#### 👥 Phase 10 Part 2– Customer Relation
 <p align="center"><img src="./phase10/task-2-info.png" height=50% width=50%><br><i>Part 2 Info: New CUSTOMER relation to store (multiple) payment methods for customers.</i></p>
 <p align="center"><img src="./phase10/1NF.png" height=50% width=50%><br><i>Proper 1NF to allow multiple payment methods for each customer.</i></p>
 
@@ -319,7 +320,7 @@ With 1NF introducing redundancies (payment methods), we have to decompose on fun
 
 Using the functional dependencies identified, we then show the new relation(s) in proper 3NF.
 
-#### Phase 10 Part– Updated Project Schema
+#### 🗺️ Phase 10 Part– Updated Project Schema
 
 <p align="center"><img src="./phase10/updated-project-schema-3NF.png" height=50% width=50%><br><i>Updated schema for the entire web store in proper 3NF.</i></p>
 

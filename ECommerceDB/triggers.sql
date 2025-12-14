@@ -25,9 +25,9 @@ BEGIN
     FROM Product
     WHERE P_ID = :new.L_ProductID;
     
-    IF(T_Inventory = 0) THEN raise_application_error(-20999,'Product #'||:new.L_ProductID||' is out of stock!');
+    IF(T_Inventory = 0) THEN raise_application_error(-20999,'Product #'||:new.L_ProductID||' is out of stock!');--throw custom user error
     ELSIF( (T_Inventory-:new.L_Quantity) < 0) THEN
-        raise_application_error(-20998, 'Product #'||:new.L_ProductID||' does not have enough stock for this order!');
+        raise_application_error(-20998, 'Product #'||:new.L_ProductID||' does not have enough stock for this order!');--throw custom user error
     ELSIF( (T_Inventory-:new.L_Quantity) >= 0) THEN
         UPDATE Product
         SET Inventory = (T_Inventory-:new.L_Quantity)
@@ -121,12 +121,12 @@ INSERT INTO lineitem VALUES('O0034','P03',1);
 INSERT INTO lineitem VALUES('O0035','P16',12);
 INSERT INTO lineitem VALUES('O0035','P18',2);
 INSERT INTO lineitem VALUES('O0036','P14',1);
-INSERT INTO lineitem VALUES('O0037','P19',8);
+INSERT INTO lineitem VALUES('O0037','P19',8);-- will throw error; purposefully throw error when not enough stock
 INSERT INTO lineitem VALUES('O0037','P18',1);
-INSERT INTO lineitem VALUES('O0038','P18',50);
+INSERT INTO lineitem VALUES('O0038','P18',50);-- will throw error; purposefully throw error when not enough stock
 INSERT INTO lineitem VALUES('O0039','P02',3);
 INSERT INTO lineitem VALUES('O0040','P13',1);
-INSERT INTO lineitem VALUES('O0041','P20',75);
+INSERT INTO lineitem VALUES('O0041','P20',75);-- will throw error; purposefully throw error when not enough stock
 INSERT INTO lineitem VALUES('O0042','P06',6);
 INSERT INTO lineitem VALUES('O0043','P11',4);
 INSERT INTO lineitem VALUES('O0044','P17',1);

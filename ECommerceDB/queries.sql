@@ -100,10 +100,10 @@ WHERE C_ReferrerID IN (SELECT C_ID FROM Customer WHERE C_ReferrerID = 'C15');--d
 -- 3. Find the customer names that have ordered the least expensive product
 SELECT C_Name "Customers who ordered the least expensive product"
 FROM Product, Customer, LineItem, Orders
-WHERE C_OrderNumber = L_OrderNumber
+WHERE O_OrderNumber = L_OrderNumber
 AND L_ProductID = P_ID
 AND C_ID = O_CustID
-AND Price = (SELECT MIN(Price) FROM Product);
+AND P_Price = (SELECT MIN(P_Price) FROM Product);
 
 -- 4. Find the avg review rating for each product that has received a review (do no include
 -- products that have not received a review).
@@ -115,10 +115,11 @@ GROUP BY R_ProductID;
 -- 5. List the total cost for each order (quantity * price for all products for each order ID) where
 -- the order cost is greater than 1000. Note: shipping cost was also a derived attribute - we will
 -- discuss how to build a function that can add that into the cost when we get to PL/SQL in Ch 5.
+-- https://docs.oracle.com/en/database/other-databases/nosql-database/25.3/sqlreferencefornosql/group-clause.html
 SELECT L_OrderNumber, P_Name, SUM(L_Quantity*P_Price)
-FROM LineItme, Product
+FROM LineItem, Product
 WHERE L_ProductID = P_ID
-GROUP BY L_OrderNumber
+GROUP BY L_OrderNumber, P_Name
 HAVING SUM(L_Quantity*P_Price) > 1000;
 
 -- 6. List customers that have spent more than $1000 on orders

@@ -16,7 +16,11 @@ Oracle PL/SQL e-commerce DB project: design schemas, manage data, run queries, a
   - [📘 Project Summary](#-project-summary)
   - [🎯 Project Features](#-project-features)
   - [🔖 Project Requirements](#-project-requirements)
-  - [🚀 Run This Project (No Installation Required)](#-run-this-project-no-installation-required)
+  - [🚀 Run This Project](#-run-this-project)
+    - [🔭 Run With FreeSQL (No Installation Required)](#-run-with-freesql-no-installation-required)
+    - [👁️‍🗨️ Oracle Cloud Setup](#️️-oracle-cloud-setup)
+    - [⌨️ SQL Developer Setup \& Execution](#️-sql-developer-setup--execution)
+    - [🔬 Run With FreeSQL (No Installation Required)](#-run-with-freesql-no-installation-required-1)
   - [🧪 Expected Output](#-expected-output)
   - [❣️ A Detailed Breakdown of the 10 Phases](#️-a-detailed-breakdown-of-the-10-phases)
     - [🔍 Phase 1: Automatic Data Type Detection (Java Program)](#-phase-1-automatic-data-type-detection-java-program)
@@ -76,15 +80,87 @@ This 16-week long project for <i><b>Data Models and Database Management Systems<
 
 
 ## 🔖 Project Requirements
-📦 Oracle account
+📦 Oracle account<br>
+📦 SQL Developer (if going the SQL Developer route)<br>
+📦 Free Tier Oracle Database (if going the SQL Developer route)<br>
 
+## 🚀 Run This Project
+### 🔭 Run With FreeSQL (No Installation Required)
+### 👁️‍🗨️ Oracle Cloud Setup
+<b> 📌 Create an Oracle Cloud account and sign up for the Oracle Cloud Free Tier </b><br>
+https://www.oracle.com/cloud/free/<br>
+⭐️ <b>You will never be charged unless you explicitly upgrade to a different tier.</b> You database will deactivate after being dormant for a certain number of days, and even then, they'll warn you via email to restart your database to keep it.
 
-## 🚀 Run This Project (No Installation Required)
+<b> 📌 Create a database in Oracle Cloud</b><br>
+<p align="center"> <img src="./README_images/oci-new-database.png" height=75% width=75%></p>
+↳ Leave all default options (unless you are experienced– I have no clue what any of it does).<br><br>
 
+<p align="center"> <img src="./README_images/cloud-button.png" height=50% width=50%></p>
+↳ Press Cloud page icon to get back to the database instance.<br><br>
+
+<p align="center"> <img src="./README_images/resources.png"></p>
+↳ Click database<br><br>
+
+<p align="center"> <img src="./README_images/database-settings.png">
+<img src="./README_images/wallet-download.png"></p>
+↳ Database connection → Wallet Type = Instance Type → Download Wallet. 🚨<b><i>Do not share this wallet with others.</i></b>🚨
+
+---
+
+### ⌨️ SQL Developer Setup & Execution
+<b> 📌 Download SQL Developer </b><br>
+https://www.oracle.com/database/sqldeveloper/
+
+<b> Set a new database connection </b><br>
+
+<p align="center"><img src="./README_images/add-connection.png"></p>
+↳ add connection by clicking the green plus sign in the top left corner of your SQL Developer window
+
+<p align="center"><img src="./README_images/sql-dev-new-database.png"></p>
+↳ You'll see something like this. Fill it out the following way.<br>
+o	Name: Name your connection. I used my project title. <br>
+o	Username: ADMIN <br>
+o	Password: Password. I used my Oracle Cloud password. <br>
+CONNECTION TYPE: Cloud wallet
+Browse > add wallet from Oracle Cloud that you got in [Oracle Cloud Setup](#oracle-cloud-setup)
+o	Click the “Test” box at the bottom. If everything is correct, the “Status” in the lower left-hand corner should say “Success”. <br>
+o	Click the “Save” box at the bottom to save your connection.<br>
+o	Click the “Connect” box.<br>
+
+Now, do the same steps but for a user account.
+
+---
+
+<b> 📌 Use SQL Developer to run SQL scripts </b><br>
+<p align="center"><img src="./README_images/sql-dev-new-database.png"></p>
+
+<p align="center"><img src="./README_images/run-file.png"></p>
+↳ Run the <b>entire</b>> script <br><br>
+
+<p align="center"><img src="./README_images/run-selected-code.png"></p>
+↳ run <b>only</b> the selected statement in the script<br><br>
+
+<b>Running files</b> [**‼️ Files located in in ECommerceDB/**](./ECommerceDB/)<br>
+
+<p align="center"><img src="./README_images/successful-run-sql-developer.png"></p>
+↳ Drag `setup.sql` into the SQL Developer window and press run. If it was successful, you will see tables appear in the Connections pane → Your database → Tables (expand) and results in the Script Output window! ☺️🎉
+
+Drag each `.sql` script (**in the order below**) into the SQL Developer window and press the Run button. Check the Script Output tab for output.
+1. **setup.sql** — Creates tables + populates all data except LineItem + adds Inventory column
+2. **triggers.sql** — Creates inventory management system trigger + inserts LineItem data (trigger fires here)
+   - will intentionally throw custom user errors when a product has no stock/not enough stock left
+3. **procedures.sql** — Defines Invoice procedure + runs test calls
+4. **queries.sql** — Optional test queries<br>
+
+⭐️ If you mess up at any point, run `setup.sql` again and start over.
+
+---
+
+### 🔬 Run With FreeSQL (No Installation Required)
 This project uses <b>PL/SQL</b>.  
 You can run all scripts for free on **Oracle LiveSQL**.
 
-<b> 📌 Open LiveSQL </b><br>
+<b> 📌 Open LiveSQL/FreeSQL </b><br>
 https://freesql.com/
 
 <b> 📌 Create a workspace (free) </b><br>
